@@ -2,20 +2,11 @@ package com.viewscenes.netsupervisor.entity;
 
 import java.io.Serializable;
 
-/**
- * @program: rpc-provider
- * @description: ${description}
- * @author: shiqizhen
- * @create: 2018-11-30 10:11
- **/
-public class InfoUser  {
+public class InfoUser implements Serializable {
 
-    /**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private String id;
+    private String id;
 
     private String name;
 
@@ -45,12 +36,13 @@ public class InfoUser  {
         this.address = address;
     }
 
-    public InfoUser(String id,String name,String address){
+    public InfoUser(String id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;
     }
 
-    public  InfoUser(){}
+    public InfoUser() {
+    }
 }
 

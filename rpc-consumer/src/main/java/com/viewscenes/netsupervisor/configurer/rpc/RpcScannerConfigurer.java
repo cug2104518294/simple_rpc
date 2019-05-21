@@ -8,9 +8,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
-/**
- * Created by MACHENIKE on 2018-12-03.
- */
 @Component
 public class RpcScannerConfigurer implements BeanDefinitionRegistryPostProcessor {
 

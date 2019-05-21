@@ -10,21 +10,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.UUID;
 
-/**
- * @program: rpc-provider
- * @description: ${description}
- * @author: shiqizhen
- * @create: 2018-11-30 10:10
- **/
 @Controller
 public class IndexController {
-
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @RequestMapping("index")
     @ResponseBody
-    public String index(){
-        InfoUser user = new InfoUser(UUID.randomUUID().toString(),"王思萌","BeiJing");
+    public String index() {
+        InfoUser user = new InfoUser(UUID.randomUUID().toString(), "王思萌", "BeiJing");
         String json = JSONObject.toJSONString(user);
         logger.info(json);
         return json;

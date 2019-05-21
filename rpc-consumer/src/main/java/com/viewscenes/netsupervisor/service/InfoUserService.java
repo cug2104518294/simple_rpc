@@ -5,12 +5,6 @@ import com.viewscenes.netsupervisor.entity.InfoUser;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @program: rpc-provider
- * @description: ${description}
- * @author: shiqizhen
- * @create: 2018-11-30 16:53
- **/
 public interface InfoUserService {
 
     List<InfoUser> insertInfoUser(InfoUser infoUser);
@@ -21,5 +15,5 @@ public interface InfoUserService {
 
     String getNameById(String id);
 
-    Map<String,InfoUser> getAllUser();
+    Map<String, InfoUser> getAllUser();
 }
